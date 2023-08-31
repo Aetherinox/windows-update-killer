@@ -8,6 +8,7 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
 - Confirm the change by clicking `Start` and type `Windows Update`
+- Keep the script somewhere in case you need to reinstall / wipe your machine.
 
 ## Preview
 
