@@ -4,7 +4,7 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 
 ## Install
 > [!NOTE]
-> Depending on your machine's configuration, you may be able to simply just double-click the `.reg` file and it auto install.
+> Depending on your machine's configuration, you may be able to double-click the `.reg` file and auto-install it.
 
 - Download the `.reg` file to your computer.
 - Right click on the file and select `Open With`
