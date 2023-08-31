@@ -10,6 +10,9 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 - Confirm the change by clicking `Start` and type `Windows Update`
 - Keep the script somewhere in case you need to reinstall / wipe your machine.
 
+> [!NOTE]
+> Depending on your machine's configuration, you may be able to simply just double-click the `.reg` file and it auto install.
+
 ## Preview
 
 ![windows_update_pause](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/e4ccae30-9cb2-420d-81a2-85519e306ea0)
