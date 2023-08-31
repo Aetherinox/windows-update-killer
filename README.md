@@ -3,15 +3,15 @@ This is a simple no-nonsense script to pause Windows update until 2040.
 Pretty much allowing you to update whenever you want instead of waking up to a rebooted machine.
 
 ## Install
+> [!NOTE]
+> Depending on your machine's configuration, you may be able to simply just double-click the `.reg` file and it auto install.
+
 - Download the `.reg` file to your computer.
 - Right click on the file and select `Open With`
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
 - Confirm the change by clicking `Start` and type `Windows Update`
 - Keep the script somewhere in case you need to reinstall / wipe your machine.
-
-> [!NOTE]
-> Depending on your machine's configuration, you may be able to simply just double-click the `.reg` file and it auto install.
 
 ## Preview
 
