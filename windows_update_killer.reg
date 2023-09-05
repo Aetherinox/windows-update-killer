@@ -1,12 +1,14 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
-"ActiveHoursStart"=dword:0000000d
-"ActiveHoursEnd"=dword:00000007
-"FlightSettingsMaxPauseDays"=dword:00000fa0
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
 "PauseFeatureUpdatesStartTime"="2023-01-01T00:00:00Z"
 "PauseFeatureUpdatesEndTime"="2040-01-02T00:00:00Z"
 "PauseQualityUpdatesStartTime"="2023-01-01T00:00:00Z"
 "PauseQualityUpdatesEndTime"="2040-01-01-02T00:00:00Z"
 "PauseUpdatesStartTime"="2023-01-01T00:00:00Z"
 "PauseUpdatesExpiryTime"="2040-01-02T00:00:00Z"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"ActiveHoursStart"=dword:0000000d
+"ActiveHoursEnd"=dword:00000007
+"FlightSettingsMaxPauseDays"=dword:00000fa0
