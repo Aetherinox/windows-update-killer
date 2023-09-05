@@ -16,6 +16,8 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 
 ## Preview
 
+![TB2E9i6](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/c6d289a2-d1eb-4a0b-bf53-181612fcd504)
+
 ![windows_update_pause](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/e4ccae30-9cb2-420d-81a2-85519e306ea0)
 
 ## Why?
