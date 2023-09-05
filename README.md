@@ -16,9 +16,7 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 
 ## Preview
 
-![TB2E9i6](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/c6d289a2-d1eb-4a0b-bf53-181612fcd504)
-
-![windows_update_pause](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/e4ccae30-9cb2-420d-81a2-85519e306ea0)
+![Windows Update](https://github.com/Aetherinox/Windows-Update-Killer/assets/118329232/c6d289a2-d1eb-4a0b-bf53-181612fcd504)
 
 ## Why?
 I was tired of the complicated methods. I don't like having my machine reboot and me not being able to control Windows Update. It's my biggest pet peeve with Windows. This script makes my life so much easier because now I don't have to deal with it. The point was just to have a stupid simple solution using a script anyone can open in notepad and view the code. Without fear of viruses and people injecting crap onto your system. Enjoy.
