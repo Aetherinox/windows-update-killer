@@ -10,7 +10,8 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 - Right click on the file and select `Open With`
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
-- Confirm the change by clicking `Start` and type `Windows Update`
+- In Windows, click `Start` -> `Run` -> type `control update` and press ENTER.
+- Near the `Pause Updates` section, click the dropdown and select how long you want updates to pause for.
 - Keep the script somewhere in case you need to reinstall / wipe your machine.
 
 ## Preview
