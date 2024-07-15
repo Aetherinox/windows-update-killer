@@ -38,13 +38,17 @@ Pretty much allowing you to update whenever you want instead of waking up to a r
 
 <br />
 
+This script is meant to be used in situations where you do not want your system automatically restarting while it is idle. I highly recommnend that you do run Windows updates once per month and ensure that you have the latest packages installed. Some of these updates could include security patches for important vulnerabilities.
+
+<br />
+
 ### Why?
 I was tired of the complicated methods. I don't like having my machine reboot and me not being able to control Windows Update. It's my biggest pet peeve with Windows. This script makes my life so much easier because now I don't have to deal with it. The point was just to have a stupid simple solution using a script anyone can open in notepad and view the code. Without fear of viruses and people injecting crap onto your system. Enjoy.
 
 <br />
 
 ### But... Updates Good
-Yes, I get it. "Thou shalt not leave thy computer outdated too long".
+Yes, I get it. _"Thou shalt not leave thy computer outdated too long"_.
 I don't. But I keep certain apps running for work, and they can remain open for days as I work on a project. I don't like waking up to my entire machine sitting at user sign-in. I like to work on my projects, and then once I have some spare time, I'll run updates when I want to, not when the machine decides to.
 
 <br />
