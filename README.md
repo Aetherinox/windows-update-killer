@@ -71,6 +71,8 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 
 - Download the `.reg` file to your computer.
 - Right click on the file and select `Open With`
+  ![](https://github.com/user-attachments/assets/ac56d320-a712-433c-813f-4bbcf7132b84)
+
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
 - In Windows, click `Start` -> `Run` -> type `control update` and press ENTER.
