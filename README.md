@@ -30,6 +30,7 @@
   - [Why?](#why)
   - [But... Updates Good](#but-updates-good)
 - [Install](#install)
+- [Re-enabling Updates](#re-enabling-updates)
 - [Preview](#preview)
 
 <br />
@@ -75,6 +76,29 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 - In Windows, click `Start` -> `Run` -> type `control update` and press ENTER.
 - Near the `Pause Updates` section, click the dropdown and select how long you want updates to pause for.
 - Keep the script somewhere in case you need to reinstall / wipe your machine.
+
+<br />
+
+---
+
+<br />
+
+## Re-enabling Updates
+To start Windows updates once again, open your start menu, type `Windows Update Settings`.
+
+<br />
+
+At the top of the Windows Update interface, click **Resume Updates**.
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/85310c9b-4117-4cbf-9e2a-2003c93e842c" width="530">
+
+</div>
+
+<br />
+
+To pause updates again, re-run the `.reg` file in this repo.
 
 <br />
 
