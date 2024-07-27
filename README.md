@@ -76,6 +76,10 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
 - In Windows, click `Start` -> `Run` -> type `control update` and press ENTER.
+  - You can also access the Windows Update window by clicking your start menu, selecting **Run**, and typing:
+   ```shell
+    ms-settings:windowsupdate
+   ```
 - Near the `Pause Updates` section, click the dropdown and select how long you want updates to pause for.
 - Keep the script somewhere in case you need to reinstall / wipe your machine.
 
