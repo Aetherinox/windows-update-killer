@@ -88,6 +88,14 @@ To start Windows updates once again, open your start menu, type `Windows Update 
 
 <br />
 
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/71bbb55d-076e-4b52-83b9-cc9bdf7f60df" width="330">
+
+</div>
+
+<br />
+
 At the top of the Windows Update interface, click **Resume Updates**.
 
 <div align="center">
