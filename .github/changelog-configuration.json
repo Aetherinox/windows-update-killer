@@ -1,0 +1,95 @@
+{
+    "categories": [
+        {
+            "title": "\n\n<br>\n\n#### 🪛 Continuous integration",
+            "labels": [ "kind/ci", "ci" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🚀 Features",
+            "labels": [ "kind/feature", "feature", "feat" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🐛 Bugfixes",
+            "labels": [ "kind/bug", "fix", "bug" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🔧 Changes",
+            "labels": [ "kind/chore", "change", "chore" ]
+        },
+        {
+            "title": "\n\n<br>\n\nn#### ✨ Optimizations",
+            "labels": [ "kind/perf", "optimization", "perf", "optimize" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🚨 Security ",
+            "labels": [ "kind/security", "security" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🧹 Housekeeping",
+            "labels": [ "kind/refactor", "refactor", "style" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🐒 Miscellaneous",
+            "labels": [ "kind/misc", "misc" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### ⛔ Deprecated",
+            "labels": [ "kind/deprecate", "deprecate" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### ⛔ Removed",
+            "labels": [ "kind/remove", "remove" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 📦 Build & Dependencies",
+            "labels": [ "kind/build", "build", "dependency", "dep", "package" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### ✏️ Docs",
+            "labels": [ "kind/docs", "doc", "docs", "wiki" ]
+        },
+        {
+            "title": "\n\n<br>\n\n#### 🧪 Tests & Demo Vault",
+            "labels": [ "kind/test", "test", "tests", "vault" ]
+        }
+    ],
+    "sort": "ASC",
+    "pr_template": "- ${{TITLE_ONLY}} : #{{MERGE_SHA}} @#{{AUTHOR}}",
+    "empty_template": "- No major changes to address in this release",
+    "custom_placeholders": [
+        {
+          "name": "TITLE_ONLY",
+          "source": "TITLE",
+          "transformer": {
+            "method": "regexr",
+            "pattern": "(\\w+(\\(.+\\))?: ?)?(.+)",
+            "target": "$2 $3"
+          }
+        }
+      ],
+    "label_extractor": [
+        {
+            "pattern": "^(build|ci|change|chore|doc|docs|wiki|remove|deprecate|security|dependency|dep|package|feat|feature|fix|bug|perf|optimize|optimization|refactor|style|test|tests|vault):(.*)",
+            "target": "$1",
+            "on_property": "title"
+        },
+        {
+            "pattern": "^(build|ci|change|chore|doc|docs|wiki|remove|deprecate|security|dependency|dep|package|feat|feature|fix|bug|perf|optimize|optimization|refactor|style|test|tests|vault){1}(\\([\\w\\-\\.]+\\))?(!)?:(.*)",
+            "target": "$1",
+            "on_property": "title"
+        }
+    ],
+    "duplicate_filter": {
+        "pattern": "github.*",
+        "on_property": "author",
+        "method": "match"
+    },
+    "max_tags_to_fetch": 200,
+    "max_pull_requests": 200,
+    "max_back_track_time_days": 365,
+    "exclude_merge_branches": [],
+    "tag_resolver": {
+        "method": "semver"
+    },
+    "base_branches": []
+}

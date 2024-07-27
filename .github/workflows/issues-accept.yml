@@ -1,0 +1,67 @@
+# ---------------------------------------------------------------------------------------
+#   @parent     : github workflow
+#   @desc       : adds a label and assignee when specified user types /accept in
+#                 PR comment.
+#   @author     : Aetherinox
+#   @url        : https://github.com/Aetherinox
+# ---------------------------------------------------------------------------------------
+
+name: "🎫 Issue › Accept"
+run-name: "🎫 Issue › Accept"
+
+# ---------------------------------------------------------------------------------------
+#   triggers
+# ---------------------------------------------------------------------------------------
+
+on:
+  issue_comment:
+    types: [created]
+
+# ---------------------------------------------------------------------------------------
+#   environment variables
+# ---------------------------------------------------------------------------------------
+
+env:
+  LABEL_ACCEPT:         "Status 𐄂 Accepted"
+
+  ASSIGN_USER:          Aetherinox
+  BOT_NAME_1:           AdminServ
+  BOT_NAME_2:           AdminServX
+  BOT_NAME_3:           EuropaServ
+  BOT_NAME_DEPENDABOT:  dependabot[bot]
+
+# ---------------------------------------------------------------------------------------
+#   jobs
+#
+#   env not available for job.if
+# ---------------------------------------------------------------------------------------
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request && contains(github.event.comment.body, '/accept') && github.event.comment.user.login == 'Aetherinox'
+    steps:
+
+      # ---------------------------------------------------------------------------------------
+      #   Add Label to accepted PR
+      # ---------------------------------------------------------------------------------------
+
+      - name: "🏷️ Assign Label › ${{ env.LABEL_ACCEPT }}"
+        run: gh issue edit "$NUMBER" --add-label "$LABELS"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: ${{ env.LABEL_ACCEPT }}
+
+      # ---------------------------------------------------------------------------------------
+      #   Add assignee to accepted PR
+      # ---------------------------------------------------------------------------------------
+
+      - name: "🏷️ Assign Assignee › ${{ env.ASSIGN_USER }}"
+        run: gh issue edit "$NUMBER" --add-assignee "$ASSIGNEE"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          ASSIGNEE: ${{ env.ASSIGN_USER }}

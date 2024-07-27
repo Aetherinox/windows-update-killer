@@ -1,0 +1,45 @@
+# Number of labels to fetch (optional). Defaults to 100
+numLabels: 40
+# These labels will not be used even if the issue contains them (optional).
+# Pass a blank array if no labels are to be excluded.
+# excludeLabels: []
+excludeLabels:
+  - pinned
+# custom configuration to override default behaviour
+# control explicitly what gets added and when
+custom:
+  - location: title
+    keywords:
+      - '[roadmap]'
+    labels:
+      - Type ◦ Roadmap
+  - location: title
+    keywords:
+      - '[road-map]'
+    labels:
+      - Type ◦ Roadmap
+  - location: title
+    keywords:
+      - '[bug]'
+    labels:
+      - Type ◦ Bug
+  - location: title
+    keywords:
+      - '[issue]'
+    labels:
+      - Type ◦ Bug
+  - location: title
+    keywords:
+      - '[feature]'
+    labels:
+      - Type ◦ Feature
+  - location: body
+    keywords:
+      - 'request feature'
+    labels:
+      - Type ◦ Feature
+  - location: title
+    keywords:
+      - '[request]'
+    labels:
+      - Type ◦ Feature
