@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+;   @script     : windows-updates-unpause.reg
+;   @author     : Aetherinox
+;   @url        : https://github.com/Aetherinox/Windows-Update-Killer
+;
+;   A script to re-activate Windows Updates.
+;
+;   User can re-pause updates by running the associated .reg file
+;        windows-updates-pause.reg
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"PauseFeatureUpdatesStartTime"=-
+"PauseFeatureUpdatesEndTime"=-
+"PauseQualityUpdatesStartTime"=-
+"PauseQualityUpdatesEndTime"=-
+"PauseUpdatesStartTime"=-
+"PauseUpdatesExpiryTime"=-
+"ActiveHoursStart"=dword:0000000d
+"ActiveHoursEnd"=dword:00000007
+"FlightSettingsMaxPauseDays"=dword:00002727
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000000
+"NoAUShutdownOption"=dword:00000000
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureStatus"=dword:00000000
+"PausedQualityStatus"=dword:00000000
+"PausedQualityDate"=-
+"PausedFeatureDate"=-

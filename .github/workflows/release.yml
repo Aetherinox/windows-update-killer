@@ -144,17 +144,31 @@ jobs:
                 echo -e ${{ steps.task_tag_previous.outputs.tag }}
 
             # ---------------------------------------------------------------------------------------
-            #   Upload artifacts > .deb packages
+            #   Upload artifacts > windows-updates-pause.reg
             # ---------------------------------------------------------------------------------------
 
             - name: >-
-                📋 Upload Artifacts › .reg
-              id: task_build_artifact_reg
+                📋 Upload Artifacts › windows-updates-pause.reg
+              id: task_build_artifact_reg_pause
               uses: actions/upload-artifact@v4
               if: always()
               with:
-                name: windows_update_killer.reg
-                path: windows_update_killer.reg
+                name: windows-updates-pause.reg
+                path: windows-updates-pause.reg
+                retention-days: 30
+
+            # ---------------------------------------------------------------------------------------
+            #   Upload artifacts > windows-updates-unpause.reg
+            # ---------------------------------------------------------------------------------------
+
+            - name: >-
+                📋 Upload Artifacts › windows-updates-unpause.reg
+              id: task_build_artifact_reg_unpause
+              uses: actions/upload-artifact@v4
+              if: always()
+              with:
+                name: windows-updates-unpause.reg
+                path: windows-updates-unpause.reg
                 retention-days: 30
 
     # ---------------------------------------------------------------------------------------
@@ -309,8 +323,6 @@ jobs:
 
             - name: "📁 Download › Saved Artifacts"
               uses: actions/download-artifact@v4
-              with:
-                name: windows_update_killer.reg
 
             # ---------------------------------------------------------------------------------------
             #   Clean dist folder since we're getting the files from artifacts
@@ -343,7 +355,8 @@ jobs:
                 draft: false
                 generate_release_notes: false
                 files: |
-                  windows_update_killer.reg
+                  windows-updates-pause.reg
+                  windows-updates-unpause.reg
                 prerelease: false
                 body: |
                   ${{ steps.task_release_changelog_categorized.outputs.changelog }}
@@ -363,7 +376,8 @@ jobs:
                 draft: false
                 generate_release_notes: false
                 files: |
-                  windows_update_killer.reg
+                  windows-updates-pause.reg
+                  windows-updates-unpause.reg
                 prerelease: false
                 body: |
                   > [!WARNING]

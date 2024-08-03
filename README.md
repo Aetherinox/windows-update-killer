@@ -67,6 +67,15 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 <br />
 
 ## Install
+This repo contains two files in the [Releases](https://github.com/Aetherinox/Windows-Update-Killer/releases) section. Download the included `.reg` files to your local system.
+
+| Filename | Description |
+| --- | --- |
+| `windows-updates-pause.reg` | Pauses all updates until 2051 |
+| `windows-updates-unpause.reg` | Re-enables windows updates |
+
+<br />
+
 > [!NOTE]
 > Depending on your machine's configuration, you may be able to double-click the `.reg` file and auto-install it.
 
