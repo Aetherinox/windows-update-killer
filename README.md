@@ -75,6 +75,14 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 
 - Select `Registry Editor`
 - Click `Yes` when prompted if you're sure you wish to continue
+
+<br />
+
+> [!NOTE]
+> As of 08/03/2024, you no longer have to view the Windows Update window. Updates are automatically paused as soon as the registry tweak is applied. However, the instructions are still 
+
+<br />
+
 - In Windows, click `Start` -> `Run` -> type `control update` and press ENTER.
   - You can also access the Windows Update window by clicking your start menu, selecting **Run**, and typing:
    ```shell

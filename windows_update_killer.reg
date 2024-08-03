@@ -1,14 +1,25 @@
 Windows Registry Editor Version 5.00
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
 "PauseFeatureUpdatesStartTime"="2024-01-01T00:00:00Z"
 "PauseFeatureUpdatesEndTime"="2051-12-31T00:00:00Z"
 "PauseQualityUpdatesStartTime"="2024-01-01T00:00:00Z"
 "PauseQualityUpdatesEndTime"="2051-12-31-01T00:00:00Z"
 "PauseUpdatesStartTime"="2024-01-01T00:00:00Z"
 "PauseUpdatesExpiryTime"="2051-12-31T00:00:00Z"
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
 "ActiveHoursStart"=dword:0000000d
 "ActiveHoursEnd"=dword:00000007
 "FlightSettingsMaxPauseDays"=dword:00002727
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+"NoAUShutdownOption"=dword:00000001
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureStatus"=dword:00000001
+"PausedQualityStatus"=dword:00000001
+"PausedQualityDate"="2024-01-01T00:00:00"
+"PausedFeatureDate"="2024-01-01T00:00:00"
