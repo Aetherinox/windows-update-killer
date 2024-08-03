@@ -153,8 +153,8 @@ jobs:
               uses: actions/upload-artifact@v4
               if: always()
               with:
-                name: "windows_update_killer.reg"
-                path: "windows_update_killer.reg"
+                name: windows_update_killer.reg
+                path: windows_update_killer.reg
                 retention-days: 30
 
     # ---------------------------------------------------------------------------------------
@@ -309,6 +309,8 @@ jobs:
 
             - name: "📁 Download › Saved Artifacts"
               uses: actions/download-artifact@v4
+              with:
+                name: windows_update_killer.reg
 
             # ---------------------------------------------------------------------------------------
             #   Clean dist folder since we're getting the files from artifacts
