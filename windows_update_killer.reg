@@ -4,7 +4,7 @@ Windows Registry Editor Version 5.00
 "PauseFeatureUpdatesStartTime"="2024-01-01T00:00:00Z"
 "PauseFeatureUpdatesEndTime"="2051-12-31T00:00:00Z"
 "PauseQualityUpdatesStartTime"="2024-01-01T00:00:00Z"
-"PauseQualityUpdatesEndTime"="2051-12-31-01T00:00:00Z"
+"PauseQualityUpdatesEndTime"="2051-12-31T00:00:00Z"
 "PauseUpdatesStartTime"="2024-01-01T00:00:00Z"
 "PauseUpdatesExpiryTime"="2051-12-31T00:00:00Z"
 "ActiveHoursStart"=dword:0000000d
