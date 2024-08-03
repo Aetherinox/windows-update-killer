@@ -79,7 +79,7 @@ I don't. But I keep certain apps running for work, and they can remain open for 
 <br />
 
 > [!NOTE]
-> As of 08/03/2024, you no longer have to view the Windows Update window. Updates are automatically paused as soon as the registry tweak is applied. However, the instructions are still 
+> As of 08/03/2024, you no longer have to view the Windows Update window. Updates are automatically paused as soon as the registry tweak is applied. However, the instructions are still provided below:
 
 <br />
 
