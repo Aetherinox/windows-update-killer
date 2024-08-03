@@ -14,6 +14,7 @@
 
 <!-- prettier-ignore-start -->
 [![Version][github-version-img]][github-version-uri]
+[![Downloads][github-downloads-img]][github-downloads-uri]
 [![Size][github-size-img]][github-size-img]
 [![Last Commit][github-commit-img]][github-commit-img]
 <!-- prettier-ignore-end -->
