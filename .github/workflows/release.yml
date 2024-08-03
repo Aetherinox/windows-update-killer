@@ -1,5 +1,5 @@
-name: "📦 .deb › Build"
-run-name: "📦 .deb › Build"
+name: "📦 Release"
+run-name: "📦 Release"
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
       PLUGIN_NAME:
         description:  "📦 Name of Plugin"
         required:     true
-        default:      'opengist'
+        default:      'win_update_killer'
         type:         string
 
       # ---------------------------------------------------------------------------------------
@@ -79,7 +79,7 @@ on:
 # ---------------------------------------------------------------------------------------
 
 env:
-    PLUGIN_NAME:            opengist
+    PLUGIN_NAME:            win_update_killer
     ASSIGN_USER:            Aetherinox
     BOT_NAME_1:             AdminServ
     BOT_NAME_2:             AdminServX
