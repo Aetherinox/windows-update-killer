@@ -79,6 +79,8 @@ This repo contains two files in the [Releases](https://github.com/Aetherinox/Win
 > [!NOTE]
 > Depending on your machine's configuration, you may be able to double-click the `.reg` file and auto-install it.
 
+<br />
+
 - Download the `.reg` file to your computer.
 - Right click on the file and select `Open With`
   ![](https://github.com/user-attachments/assets/ac56d320-a712-433c-813f-4bbcf7132b84)
