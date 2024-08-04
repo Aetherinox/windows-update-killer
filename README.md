@@ -32,6 +32,8 @@
   - [But... Updates Good](#but-updates-good)
 - [Install](#install)
 - [Re-enabling Updates](#re-enabling-updates)
+  - [Option 1 (unpause.reg)](#option-1-unpausereg)
+  - [Option 2 (manual)](#option-2-manual)
 - [Preview](#preview)
 
 <br />
@@ -110,6 +112,24 @@ This repo contains two files in the [Releases](https://github.com/Aetherinox/Win
 <br />
 
 ## Re-enabling Updates
+You can re-enable Windows updates by performing one of the following:
+- Option 1 - unpause.reg [view](#option-1-unpausereg)
+- Option 2 - manual [view](#option-2-manual)
+
+<br />
+
+### Option 1 (unpause.reg)
+This repository includes two scripts:
+- ` windows-updates-pause.reg`
+- ` windows-updates-unpause.reg`
+
+<br />
+
+Download and run the script ` windows-updates-unpause.reg`. Windows updates will be re-activated, but you'll be able to re-pause updates whenever you want and for any duration.
+
+<br />
+
+### Option 2 (manual)
 To start Windows updates once again, open your start menu, type `Windows Update Settings`.
 
 <br />
