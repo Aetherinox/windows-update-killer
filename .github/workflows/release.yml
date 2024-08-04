@@ -321,8 +321,15 @@ jobs:
             #   artifacts > download
             # ---------------------------------------------------------------------------------------
 
-            - name: "📁 Download › Saved Artifacts"
+            - name: "📁 Download › Artifacts › windows-updates-pause.reg"
               uses: actions/download-artifact@v4
+              with:
+                name: windows-updates-pause.reg
+
+            - name: "📁 Download › Artifacts › windows-updates-unpause.reg"
+              uses: actions/download-artifact@v4
+              with:
+                name: windows-updates-unpause.reg
 
             # ---------------------------------------------------------------------------------------
             #   Clean dist folder since we're getting the files from artifacts
