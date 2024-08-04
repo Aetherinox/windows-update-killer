@@ -120,12 +120,12 @@ You can re-enable Windows updates by performing one of the following:
 
 ### Option 1 (unpause.reg)
 This repository includes two scripts:
-- ` windows-updates-pause.reg`
-- ` windows-updates-unpause.reg`
+- `windows-updates-pause.reg`
+- `windows-updates-unpause.reg`
 
 <br />
 
-Download and run the script ` windows-updates-unpause.reg`. Windows updates will be re-activated, but you'll be able to re-pause updates whenever you want and for any duration.
+Download and run the script `windows-updates-unpause.reg`. Windows updates will be re-activated, but you'll be able to re-pause updates whenever you want and for any duration.
 
 <br />
 
