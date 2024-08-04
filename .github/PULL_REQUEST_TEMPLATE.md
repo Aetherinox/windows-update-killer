@@ -1,20 +1,22 @@
 <!--
 
+    Pull Request
+
     Ensure you read all of the sections carefully. Failure to fill this form out will result in your pull request being closed.
 
     This text will remain hidden when you submit your pull request.
 
     For your pull request title, use the format:
-        [BUG]: Brief title of the bug being fixed
-        [FEATURE]: Brief title of the feature being added
-        [DOCS]: Brief title of the feature being added
+        [BUG]:      Brief title of the bug being fixed
+        [FEATURE]:  Brief title of the feature being added
+        [DOCS]:     Brief title of the feature being added
 
     Failure to follow the above title format will result in your PR being ignored.
 
 -->
 
 # Pull Request
-<small>Checkmark which topic best describes your contribution:</small>
+<small>Select which topic best describes your contribution:</small>
 
 - [ ] Feature
 - [ ] Bug
