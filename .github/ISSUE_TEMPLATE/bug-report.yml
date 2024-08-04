@@ -1,0 +1,101 @@
+name: "🐛 Bug Report"
+description: Found something you weren't expecting? Report it here!
+title: "🐛 Bug: <title>"
+labels: [
+  "Type ◦ Bug"
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Please speak `English`.
+        2. Make sure you are using the latest version and take a moment to check that your issue hasn't been reported before.
+        3. It's really important to provide pertinent details and logs,
+           incomplete details will be handled as an invalid report.
+
+        <br />
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Please provide a description of your issue here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: |
+        Describe the steps that need taken by the developer to get the error / issue you're experiencing.
+      value: |
+        - 
+        - 
+        - 
+        - 
+    validations:
+      required: true
+
+  - type: input
+    id: ver-utility
+    attributes:
+      label: "Version"
+      description: |
+        Version of app you are running
+      placeholder: "Ex: v1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: ver-os
+    attributes:
+      label: OS / Distro
+      description: Operating system you are currently running.
+      placeholder: "Ex: Windows 11 Pro 10.0.22631 Build 22631"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority-type
+    attributes:
+      label: Priority
+      description: |
+        How critical is the issue?
+        Do not abuse this. Issues that completely break the utility would be classified as critical
+      options:
+        - "Low"
+        - "Normal"
+        - "High"
+        - "Urgent"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Any error messages you have received
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Referenced Issues
+      description: |
+        List any existing issues this ticket may be associated with.
+        Structure each issue as:
+           - #NUMBER
+           - #3
+      value: |
+        - #
+        - #
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        Please provide screenshots of any errors or the issue you're having. 
+        Gifs are even better.

@@ -1,0 +1,33 @@
+name: "💡 Feature Request"
+description: Got a suggestion?  Submit your request here.
+title: "💡 Feature: <title>"
+labels: [
+  "Type ◦ Feature"
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Please speak English.
+        2. Please take a moment to check that your feature hasn't already been suggested.
+        3. Be detailed but to the point.
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      placeholder: |
+        I would like to request ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        If possible, provide screenshots.
+        Want a feature placed in a specific location? Mark it in a screenshot.
+        Want something modified? Try creating a mockup. 
+        The more details about how it should look, the better.
+        Not required, but appreciated.
