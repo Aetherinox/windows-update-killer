@@ -262,7 +262,7 @@ jobs:
             - name: "📝 Changelog › Build (Categorized)"
               id: task_release_changelog_categorized
               if: ${{ startsWith( inputs.SHOW_UNCATEGORIZED, false ) }}
-              uses: mikepenz/release-changelog-builder-action@v4
+              uses: mikepenz/release-changelog-builder-action@v5
               with:
                 token: ${{ secrets.ADMINSERV_TOKEN }}
                 configuration: ".github/changelog-configuration.json"
@@ -286,7 +286,7 @@ jobs:
             - name: "📝 Changelog › Build (Uncategorized)"
               id: task_release_changelog_uncategorized
               if: ${{ startsWith( inputs.SHOW_UNCATEGORIZED, true ) }}
-              uses: mikepenz/release-changelog-builder-action@v4
+              uses: mikepenz/release-changelog-builder-action@v5
               with:
                 token: ${{ secrets.ADMINSERV_TOKEN }}
                 configuration: ".github/changelog-configuration.json"
