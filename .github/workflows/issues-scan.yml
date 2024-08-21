@@ -177,7 +177,7 @@ jobs:
 
       - name: "📄 Get changed files"
         id: task_autocheck_changed_files_get
-        uses: tj-actions/changed-files@v44
+        uses: tj-actions/changed-files@v45
         with:
           separator: ","
 
