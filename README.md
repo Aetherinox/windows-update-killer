@@ -35,6 +35,7 @@
   - [Option 1 (unpause.reg)](#option-1-unpausereg)
   - [Option 2 (manual)](#option-2-manual)
 - [Preview](#preview)
+- [Contributors](#contributors)
 
 <br />
 
@@ -168,7 +169,11 @@ To pause updates again, re-run the `.reg` file in this repo.
 
 </div>
 
+<br />
 
+## Contributors
+
+![Alt](https://repobeats.axiom.co/api/embed/fec3c11bcd253185c455fdd2bc60c8dc13d3ced8.svg "Repobeats analytics image")
 
 <br />
 <br />
