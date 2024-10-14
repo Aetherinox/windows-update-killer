@@ -20,6 +20,11 @@ Windows Registry Editor Version 5.00
 "ActiveHoursEnd"=dword:00000007
 "FlightSettingsMaxPauseDays"=dword:00002727
 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc]
+"Start"=dword:00000003
+"FailureActions"=hex:84,03,00,00,00,00,00,00,00,00,00,00,03,00,00,00,14,00,00,\
+  00,01,00,00,00,c0,d4,01,00,01,00,00,00,e0,93,04,00,00,00,00,00,00,00,00,00
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
 "NoAutoUpdate"=dword:00000000
 "NoAUShutdownOption"=dword:00000000
