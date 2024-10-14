@@ -122,8 +122,6 @@ jobs:
             actions: read
             issues: write
             pull-requests: read
-        environment:
-            name: Orion
         steps:
 
             # #

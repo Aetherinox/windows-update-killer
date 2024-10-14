@@ -144,8 +144,6 @@ jobs:
         name: >-
             🎫 Labels › Verify Existing
         runs-on: ubuntu-latest
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -222,8 +220,6 @@ jobs:
             🎫 Labels › Assign Missing
         runs-on: ubuntu-latest
         needs: job-labels-create
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -597,8 +593,6 @@ jobs:
             contents: write
             issues: write
             pull-requests: write
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -640,8 +634,6 @@ jobs:
         needs:
             - job-labels-create
             - job-issues-nolabel
-        environment:
-            name: Orion
         steps:
 
             # #

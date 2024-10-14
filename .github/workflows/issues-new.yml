@@ -134,8 +134,6 @@ jobs:
         name: >-
             🎫 Labels › Verify Existing
         runs-on: ubuntu-latest
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -211,8 +209,6 @@ jobs:
             contents: 'read'
             id-token: 'write'
             issues: 'write'
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -236,7 +232,7 @@ jobs:
             # #
             #   Labels > Bugs
             #
-            #   Title of issue is carried over from the previous step. 
+            #   Title of issue is carried over from the previous step.
             # #
 
             - name: >-
@@ -366,7 +362,7 @@ jobs:
             # #
             #   Labels > Features
             #
-            #   Title of issue is carried over from the previous step. 
+            #   Title of issue is carried over from the previous step.
             # #
 
             - name: >-
@@ -498,7 +494,7 @@ jobs:
             # #
             #   Labels > Urgent
             #
-            #   Title of issue is carried over from the previous step. 
+            #   Title of issue is carried over from the previous step.
             # #
 
             - name: >-
@@ -630,7 +626,7 @@ jobs:
             # #
             #   Labels > Roadmap
             #
-            #   Title of issue is carried over from the previous step. 
+            #   Title of issue is carried over from the previous step.
             # #
 
             - name: >-
@@ -774,8 +770,6 @@ jobs:
             contents: 'read'
             id-token: 'write'
             issues: 'write'
-        environment:
-            name: Orion
         steps:
 
             # #
@@ -864,8 +858,6 @@ jobs:
             && !contains( needs.*.result, 'failure' )
         permissions:
             contents: write
-        environment:
-            name: Orion
         steps:
 
             # #
