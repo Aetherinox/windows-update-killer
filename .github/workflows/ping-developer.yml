@@ -5,8 +5,8 @@
 #   @url                https://github.com/Aetherinox
 # #
 
-name: "🎫 Ping › Developer"
-run-name: "🎫 Ping › Developer"
+name: "⚙️ Ping › Developer"
+run-name: "⚙️ Ping › Developer"
 
 # #
 #   triggers
@@ -69,7 +69,7 @@ jobs:
                     secure: true
                     username: ${{secrets.EMAIL_FROM}}
                     password: ${{secrets.EMAIL_KEY}}
-                    subject: "Github: Ping notification from ${{ github.repository }}" 
+                    subject: "Github: Ping notification from ${{ github.repository }}"
                     to: ${{secrets.EMAIL_TO}}
                     from: ${{secrets.EMAIL_FROM}}
                     html_body: |

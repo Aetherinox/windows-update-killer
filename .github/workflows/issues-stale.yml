@@ -61,9 +61,7 @@ env:
     LABEL_INTERNAL:       "Type ◦ Internal"
     LABEL_URGENT:         "⚠ Urgent"
 
-    BOT_NAME_1:           AdminServ
-    BOT_NAME_2:           AdminServX
-    BOT_NAME_3:           EuropaServ
+    BOT_NAME_1:           EuropaServ
     BOT_NAME_DEPENDABOT:  dependabot[bot]
     LABELS_JSON: |
       [
@@ -603,22 +601,20 @@ jobs:
             uses: actions/stale@v9
             id: task_issues_stale_run
             with:
-                repo-token: ${{ secrets.ADMINSERV_TOKEN }}
+                repo-token: ${{ secrets.ADMINSERV_TOKEN_CL }}
                 stale-issue-message: |
-                    ⚠️ It looks like there hasn't been any recent updates on this
-                    issue.  If you created this issue and no longer consider it
+                    ⚠️ It looks like there hasn't been any recent updates on this issue.  If you created this issue and no longer consider it
                     open, then please login to github and close the issue.
 
-                    If there is no further activity on this issue, it will be
-                    automatically closed in the next few days.
+                    If there is no further activity on this issue, it will be automatically closed in the next week.
 
                     ---
 
                     <sub>I am a bot reaching out to you with an automated response.</sub>
                 stale-issue-label: 'Status 𐄂 Stale'
                 close-issue-label: 'Status 𐄂 Autoclosed'
-                exempt-issue-labels: 'feature,Type ◦ Feature,bug,Type ◦ Bug'
-                days-before-stale: 30
+                exempt-issue-labels: 'Status 𐄂 Accepted,Status 𐄂 Review,Status 𐄂 Pending,Type ◦ Bug,Type ◦ Dependency,Type ◦ Docs,Type ◦ Feature,Type ◦ Git Action,Type ◦ Pull Request,Type ◦ Roadmap'
+                days-before-stale: 14
                 days-before-close: 7
                 days-before-pr-stale: -1
                 days-before-pr-close: -1
@@ -644,10 +640,28 @@ jobs:
               uses: dessant/lock-threads@v5
               id: task_issues_lock_run
               with:
-                  add-pr-labels: 'Status 𐄂 Locked'
+                  github-token: ${{ secrets.ADMINSERV_TOKEN_CL }}
+                  exclude-any-issue-labels: 'AC › Review Required,Status 𐄂 Accepted,Status 𐄂 Review,Status 𐄂 Pending,Type ◦ Bug,Type ◦ Dependency,Type ◦ Docs,Type ◦ Feature,Type ◦ Git Action,Type ◦ Roadmap,Type ◦ Internal'
                   add-issue-labels: 'Status 𐄂 Locked'
-                  github-token: ${{ secrets.ADMINSERV_TOKEN }}
-                  issue-inactive-days: '180'
-                  issue-lock-reason: 'resolved'
+                  issue-inactive-days: '60'
+                  issue-lock-reason: 'issue inactive for 60 days'
+                  issue-comment: >
+                      ⚠️ This **issue** has been automatically locked since there has not been any recent activity after it was closed.
+
+                      Please open a new issue for related bugs.
+
+                      ---
+
+                      <sub>I am a bot reaching out to you with an automated response.</sub>
+                  exclude-any-pr-labels: 'AC › Review Required,Status 𐄂 Accepted,Status 𐄂 Review,Status 𐄂 Pending,Type ◦ Bug,Type ◦ Dependency,Type ◦ Docs,Type ◦ Feature,Type ◦ Git Action,Type ◦ Roadmap,Type ◦ Internal'
+                  add-pr-labels: 'Status 𐄂 Locked'
                   pr-inactive-days: '365'
-                  pr-lock-reason: 'resolved'
+                  pr-lock-reason: 'pr inactive for 365 days'
+                  pr-comment: >
+                      ⚠️ This **pull request** has been automatically locked since there has not been any recent activity after it was closed.
+
+                      Please open a new issue for related bugs.
+
+                      ---
+
+                      <sub>I am a bot reaching out to you with an automated response.</sub>
