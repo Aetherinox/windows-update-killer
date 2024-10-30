@@ -43,6 +43,17 @@
 
 <br />
 
+> [!NOTE]
+> Want to secure Windows or block off Microsoft's servers from communicating with your machine?
+> 
+> Visit my new [Blocklist Repository](https://github.com/Aetherinox/blocklists). Take back control over your machine and network with a large collection of IPs to add to your firewall. Includes Microsoft, Bing, Google, Facebook, and even geographical location blocking.
+
+<br />
+
+---
+
+<br />
+
 ## About
 This is a simple no-nonsense script to pause Windows update until 2051.
 Pretty much allowing you to update whenever you want instead of waking up to a rebooted machine.
