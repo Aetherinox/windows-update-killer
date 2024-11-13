@@ -644,7 +644,7 @@ jobs:
                   exclude-any-issue-labels: 'AC › Review Required,Status 𐄂 Accepted,Status 𐄂 Review,Status 𐄂 Pending,Type ◦ Bug,Type ◦ Dependency,Type ◦ Docs,Type ◦ Feature,Type ◦ Git Action,Type ◦ Roadmap,Type ◦ Internal'
                   add-issue-labels: 'Status 𐄂 Locked'
                   issue-inactive-days: '60'
-                  issue-lock-reason: 'issue inactive for 60 days'
+                  issue-lock-reason: 'resolved'
                   issue-comment: >
                       ⚠️ This **issue** has been automatically locked since there has not been any recent activity after it was closed.
 
@@ -656,7 +656,7 @@ jobs:
                   exclude-any-pr-labels: 'AC › Review Required,Status 𐄂 Accepted,Status 𐄂 Review,Status 𐄂 Pending,Type ◦ Bug,Type ◦ Dependency,Type ◦ Docs,Type ◦ Feature,Type ◦ Git Action,Type ◦ Roadmap,Type ◦ Internal'
                   add-pr-labels: 'Status 𐄂 Locked'
                   pr-inactive-days: '365'
-                  pr-lock-reason: 'pr inactive for 365 days'
+                  pr-lock-reason: 'resolved'
                   pr-comment: >
                       ⚠️ This **pull request** has been automatically locked since there has not been any recent activity after it was closed.
 
